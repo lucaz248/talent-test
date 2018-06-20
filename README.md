@@ -1,3 +1,4 @@
+![alt text](img/igz-h.jpg)
 # Intelygenz talent test
 
 ### What you’ll need
