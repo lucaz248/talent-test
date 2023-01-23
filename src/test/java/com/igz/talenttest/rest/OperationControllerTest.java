@@ -41,8 +41,7 @@ public class OperationControllerTest {
 
     @Test
     public void binarySortGet() throws Exception {
-        String urlTemplate = "/operation/binary-sort/".concat(INPUT_TEST);
-        this.mockMvc.perform(get(urlTemplate).contentType(MediaType.APPLICATION_JSON))
+        this.mockMvc.perform(get(URL_TEMPLATE.concat(INPUT_TEST)).contentType(MediaType.APPLICATION_JSON))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString(EXPECTED_OUTPUT)));
